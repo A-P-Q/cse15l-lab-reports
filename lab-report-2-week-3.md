@@ -22,7 +22,8 @@ class Handler implements URLHandler {
                 String[] query = url.getQuery().split("=");
                 if (query[0].equals("s")) {   
                     ListofString.add(query[1]);
-                    return  String.format("String that was added is: %s. String(s) now in the list: %s", query[1], ListofString.toString());
+                    return  String.format("String that was added is: %s. 
+                    String(s) now in the list: %s", query[1], ListofString.toString());
                 }
             }
             else if (url.getPath().contains("/search")){
