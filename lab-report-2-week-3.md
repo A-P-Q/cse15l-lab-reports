@@ -14,7 +14,7 @@ class Handler implements URLHandler {
     public String handleRequest(URI url) {
         //Display Strings in the list. 
         if (url.getPath().equals("/")) {
-            return String.format("String(s) already in the list: %s", ListofString.toString());
+            return String.format("String(s) in the list: %s", ListofString.toString());
         } 
         else {
             System.out.println("Path: " + url.getPath());
@@ -57,19 +57,19 @@ class SearchEngine {
 My Screenshots: <Br>
 ![image](default.png)<Br>
 Method called: handleRequest<Br> 
-Values of relevant arguments: url=localhost:7575<Br>
-Values of relevant fields of the class: ListofString=[empty]<Br>
+Values of relevant arguments: url=localhost:7538<Br>
+Values of relevant fields of the class: ListofString=[apple, anewstringtoadd, pineapple]<Br>
 How values change:  for this page, the value never changed. <Br>
 ![image](add.png)<Br>
 Method called: handleRequest<Br>
-Values of relevant arguments: url=localhost:7575/add?s=apple<Br>
-Values of relevant fields of the class: ListofString=[anewstringtoadd, pineapple, apple]<Br>
-How values change: before enter "/add?s=apple", the listofString was {anewstringtoadd, pineapple}, after enter this, the if statement in the else statement is activated, and ListofString.add(query[1]) is activated. Since query[1]="apple", apple is added to the string list. Then, the string list is returned and shown by the ListofString.toString() statement. <Br>
+Values of relevant arguments: url=localhost:7538/add?s=pineapple<Br>
+Values of relevant fields of the class: ListofString=[apple, anewstringtoadd, pineapple]<Br>
+How values change: before enter "/add?s=pineapple", the listofString was {apple, anewstringtoadd}, after enter this, the if statement in the else statement is activated, and ListofString.add(query[1]) is activated. Since query[1]="pineapple", pineapple is added to the string list. Then, the string list is returned and shown by the ListofString.toString() statement. <Br>
 ![image](query.png)<Br>
 Method called: handleRequest<Br>
-Values of relevant arguments: url=localhost:7575/search?s=app<Br>
-Values of relevant fields of the class: ListofString=[anewstringtoadd, pineapple, apple]; ListofSubString=[pineapple, apple]<Br>
-How values change: The string list now contain [anewstringtoadd, pineapple, apple]. After entering "/search?s=app", the else if statement is activated, and the for loop inside is also activated. The for loop goes through every single string inside the list, and look for the string that contains the substring at query[1], which is app in this case. If str.contain(query[1]) = true, then the string contains that substring is added to the ListofSubString by the ListofSubString.add(str) statement. Therefore, since both pineapple and apple contain "app", they are added to the ListofSubString, and returned and shown by the ListofSubString.toString() statement. 
+Values of relevant arguments: url=localhost:7538/search?s=app<Br>
+Values of relevant fields of the class: ListofString=[apple, anewstringtoadd, pineapple]; ListofSubString=[apple, pineapple]<Br>
+How values change: The string list now contain [apple, anewstringtoadd, pineapple]. After entering "/search?s=app", the else if statement is activated, and the for loop inside is also activated. The for loop goes through every single string inside the list, and look for the string that contains the substring at query[1], which is app in this case. If str.contain(query[1]) = true, then the string contains that substring is added to the ListofSubString by the ListofSubString.add(str) statement. Therefore, since both pineapple and apple contain "app", they are added to the ListofSubString, and returned and shown by the ListofSubString.toString() statement. 
 
 ## Part 2
 Two bugs:<Br>
