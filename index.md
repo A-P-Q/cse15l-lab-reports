@@ -3,3 +3,5 @@
 [Lab Report 1](https://a-p-q.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
 <br/>
 [Lab Report 2](https://a-p-q.github.io/cse15l-lab-reports/lab-report-1-week-1.html)
+<Br/>
+[Lab Report 3](https://a-p-q.github.io/cse15l-lab-reports/lab-report-2-week-3.html)
