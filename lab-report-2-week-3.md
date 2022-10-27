@@ -76,12 +76,18 @@ Two bugs:<Br>
 From Array methods:<Br>
 Reverse in Place: 
 - Failure inducing input: [0, 101, 0, 2324, 0 ,325523, 0, 2002]
+![image](TestALReverseInPlace.png)
 - Symptom: [0, 0, 0, 0, 0, 0, 0, 0]
+![image](TerminalOutputALReverseInPlace.png)
 - Bug: It modifies the old array rather than returning a new array, since the code says arr[i] = newArray[arr.length-i-1]. The values of each element in the new array are initialized to 0, because they were never assigned any value, so it reutns the old array with all elements replaced with 0. <Br>
+![image](FixedALReverseInPlace.png)
 <Br>
 
 From Linked List Methods:<Br>
 Append:
 - Failure inducing input: append 1, 2, 3, 4, 5
+![image](TestLLAppend.png)
 - Symptom: Timeout
+![image](TerminalOutputLLAppend.png)
 - Bug: In the append method, the while loop always returns true for n.next !=null; therefore, we encounter an infinite loop. 
+![image](FixedLLAppend.png)
