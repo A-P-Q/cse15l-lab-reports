@@ -1,5 +1,5 @@
 ## Researching Command
-find
+## find
 ~~~
 1. find ./technical -name *hapter-13* //find files whose name contain hapter-13
 
@@ -27,7 +27,7 @@ It finds all files under alcohol problems. It is useful because it helps you fin
 It finds all files whose name starts with the letter A. This is particularly useful because it allows you to find files with certain names. 
 <Br>
 <Br>
-less
+## less
 ~~~
 less ./technical/911report/preface.txt    //display whole file
 
@@ -80,7 +80,7 @@ less  -p happen ./technical/911report/preface.txt   //display file start with li
 It displays files with line which has first appearance of "happen". This is particularlly useful when you need to find certain lines containing certain words/substrings. 
 <Br>
 <Br>
-grep
+## grep
 ~~~
 grep -i "HaPPEn" ./technical/911report/preface.txt //display lines with "happen" case insensitive
 
