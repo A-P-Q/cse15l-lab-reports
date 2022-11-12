@@ -1,7 +1,8 @@
 ## Researching Command
 ## find
 
-1. find ./technical -name 
+## 1. find -name 
+<Br/>
 
 ~~~
 find ./technical -name *hapter-13* //find files whose name contain hapter-13
@@ -35,7 +36,8 @@ find ./technical -name chapter-13.1.txt
 
 It finds one specific file whose name is "chapter-13.1.txt". It is useful when you need to find one certain file. 
 <Br>
-2. find -type 
+## 2. find -type 
+<Br/>
 
 ~~~
 find ./technical -type d 
@@ -79,7 +81,8 @@ find ./technical/government/ ! -type f
 
 It finds all files within government that are not files. It is useful when you want to exclude all files when return. 
 <Br>
-3. find -size
+## 3. find -size
+<Br/>
 
 ~~~
 find ./technical/911report -size -10M
