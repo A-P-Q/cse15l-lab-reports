@@ -1,7 +1,9 @@
 ## Part 1
 ## Changing the name of the start parameter and its uses  to base
 ```
-/start (enter) i (delete) (delete) (delete) (delete) (delete) base (esc) /start (enter) i (delete) (delete) (delete) (delete) (delete) base (esc) :wq! 
+/start (enter) i (delete) (delete) (delete) (delete) (delete) base (esc) 
+/start (enter) i (delete) (delete) (delete) (delete) (delete) base (esc) 
+:wq! 
 ```
 <Br>
 
