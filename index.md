@@ -8,4 +8,5 @@
 <Br/>
 [Lab Report 4](https://a-p-q.github.io/cse15l-lab-reports/lab-report-3-week-5.html)
 <Br/>
-[Lab Report 5](https://a-p-q.github.io/cse15l-lab-reports/lab-report-4-week-7.html)
+[Lab Report 5](https://a-p-q.github.io/cse15l-lab-reports/lab-report-4-week-7.html)<Br>
+[Lab Report 6](https://a-p-q.github.io/cse15l-lab-reports/lab-report-5-week-9.html)
