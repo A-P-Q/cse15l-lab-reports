@@ -38,19 +38,19 @@ echo "Success! All tests passed!"
 ~~~
 
 Screenshot of the output: 
--list-methods-lab3.git
+-list-methods-lab3.git<Br>
 ![image](LR5I1.png)
 <Br>
--list-methods-corrected.git
+-list-methods-corrected.git<Br>
 ![image](LR5I2.png)
 <Br>
--list-methods-compile-error.git
+-list-methods-compile-error.git<Br>
 ![image](LR5I3.png)
 
 Trace list-methods-lab3.git: <Br>
-1. 
-Initialize a variable. No output nor exit code. 
 
+1. 
+    initialize a variable, no output or exit code. 
 2. 
     1. stdout: NA;
     2. stderr: NA;
